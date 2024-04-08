@@ -2,10 +2,6 @@
 
 This python script tracks prices of multiple specific products on www.galaxus.ch and alerts the user via email if the prices reaches a defined alert price. The script can be automatised with cronjob to be run every 24h.
 
-## Notification E-Mails
-
-<img width="1464" alt="Picture" src="https://github.com/fabiothon/Galaxus_Price_Tracker/blob/6fdf1c738fc4a7086854cb20e8c0d7e6c1ad619f/picture_1.png">
-
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) and the provided requirements.txt file to install this script.
@@ -16,6 +12,10 @@ pip install -r /path/to/requirements.txt
 
 ## Google API
 This script uses the Google API to send mail and thus credentials (credentials.json) is needed to access the Google API.
+
+### Notification E-Mails
+
+<img width="1464" alt="Picture" src="https://github.com/fabiothon/Galaxus_Price_Tracker/blob/7e415fb3cad11c7d2c5c7b600e3d0563bf7111a7/picture_1.png">
 
 ## Usage
 
