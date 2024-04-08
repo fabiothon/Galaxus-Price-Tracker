@@ -11,7 +11,7 @@ pip install -r /path/to/requirements.txt
 `````
 
 ## Google API
-This script uses the Google API to send mail and thus credentials (credentials.json) is needed to access the Google API.
+This script uses the Google API to send mail and thus credentials (credentials.json) are needed to access the Google API.
 
 ### Notification E-Mails
 
