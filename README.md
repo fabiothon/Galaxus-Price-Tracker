@@ -1,10 +1,10 @@
 # Galaxus Price Tracker
 
-This python script tracks prices of multiple specific products on www.galaxus.ch and alerts the user via email if the prices reaches a defined alert price. The script can be automatised with cronjob to be run every 24h.
+This python script tracks prices of multiple specific products on www.galaxus.ch and alerts the user via email if the prices reaches a defined alert price. The script can be automatised with cronjob or windows task scheduler to be run every 24h.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) and the provided requirements.txt file to install this script.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) and the provided requirements.txt file to install this script. This script is optimised for macOS and thus uses the keyring package to safely store and access necessary keys. Ignore if you use a different operating system.
 
 ```bash
 pip install -r /path/to/requirements.txt
