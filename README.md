@@ -1,6 +1,6 @@
 # Galaxus Price Tracker
 
-This python script tracks prices of multiple specific products on www.galaxus.ch and alerts the user via email if the prices reaches a defined alert price. The script can be automatised with cronjob or windows task scheduler to be run every 24h.
+This Python script tracks prices of multiple specific products on www.galaxus.ch and alerts the user via email if the prices reaches a defined alert price. The script can be automatised with cronjob or windows task scheduler to run every 24h.
 
 ## Installation
 
@@ -11,7 +11,7 @@ pip install -r /path/to/requirements.txt
 `````
 
 ## Google API
-This script uses the Google API to send mail and thus credentials (credentials.json) are needed to access the Google API.
+This script uses the Google API to send mail and thus credentials.json is needed to access the Google API. More information: https://developers.google.com/workspace/guides/create-credentials
 
 ### Notification E-Mails
 
@@ -21,9 +21,9 @@ This script uses the Google API to send mail and thus credentials (credentials.j
 
 1. Download of all necessary files (main.py, requirements.txt, products.csv and credentials.json)
 2. Install necessary libraries on your local environment or virtual environment via the requirement.txt
-3. Fill in your credentials and products in the corresponding files
+3. Get access to the Google API and fill in all necessary information into the products and credentials files
 4. Run application
-5. Use cronjob to automatise the process
+5. Use cronjob or other tools to automatise the process
 
 ## Contributing
 
