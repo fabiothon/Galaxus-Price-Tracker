@@ -37,7 +37,8 @@ def scrape():
     try:
         page = requests.get(product_url, headers=headers)
         soup = BeautifulSoup(page.content, 'html.parser')
-        price = float(soup.find(attrs={'sc-125c42c7-5 hMyxKO'}).get_text())
+        price_text = soup.find(attrs={'sc-125c42c7-5 hMyxKO'}).get_text().strip()
+        price = float(''.join(filter(str.isdigit, price_text)))
         logger.success("Successfully scraped website")
         return price
         
